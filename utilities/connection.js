@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
-const url = "mongodb+srv://Mayur28:Mayur2821@cluster0.bun1u.mongodb.net/Shoes?retryWrites=true&w=majority";
+const url = process.env.URL;
 const options = {
   useNewUrlParser: true,
   useFindAndModify: false,
