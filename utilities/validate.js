@@ -16,6 +16,7 @@ validator.addtoCart = (obj) => {
     price: joi.number().min(1).required(),
     discount: joi.number().min(0).max(100).required(),
     shippingCharges: joi.number().min(0).required(),
+    __v:joi.number(),
     userid: joi.string().required(),
   });
   const { error, value } = schema.validate(obj);
