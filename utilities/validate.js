@@ -3,7 +3,7 @@ const joi = require("joi");
 let validator = {};
 validator.addtoCart = (obj) => {
   const schema = joi.object({
-    quantity: joi.number().min(1).max(5).required(),
+    // quantity: joi.number().min(1).max(5).required(),
     size: joi.string().valid("XS", "S", "M", "L", "XL").required(),
     color: joi.string().required(),
     image: joi.string().required(),
